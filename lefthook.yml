@@ -2,4 +2,4 @@ pre-commit:
   commands:
     standard:
       glob: "*.{js,jsx}"
-      run: yarn prettier --write {staged_files}
+      run: yarn prettier --write {staged_files} && git add {staged_files}
