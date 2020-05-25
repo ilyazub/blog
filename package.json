@@ -17,8 +17,10 @@
     "react-syntax-highlighter": "^12.2.1"
   },
   "devDependencies": {
+    "@arkweid/lefthook": "^0.7.2",
     "postcss-flexbugs-fixes": "4.2.1",
     "postcss-preset-env": "^6.7.0",
+    "prettier": "2.0.5",
     "tailwindcss": "^1.4.6",
     "vercel": "^19.0.1"
   }
