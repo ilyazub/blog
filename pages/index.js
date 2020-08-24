@@ -17,7 +17,7 @@ export default function Index({ allPosts, title }) {
           <title>{title}</title>
         </Head>
         <Container>
-          <Intro />
+          <Intro title={title} />
           {heroPost && (
             <HeroPost
               title={heroPost.title}

@@ -10,7 +10,6 @@ import Layout from '@/components/layout'
 import { getAllPostsWithSlug, getPostAndMorePosts } from '@/lib/api'
 import PostTitle from '@/components/post-title'
 import Head from 'next/head'
-import { CMS_NAME } from '@/lib/constants'
 
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter()
@@ -30,7 +29,7 @@ export default function Post({ post, morePosts, preview }) {
                 <title>
                   {post.title}
                 </title>
-                <meta property="og:image" content={post.ogImage.url} />
+                {post.ogImage && <meta property="og:image" content={post.ogImage.url} />}
               </Head>
               <PostHeader
                 title={post.title}
