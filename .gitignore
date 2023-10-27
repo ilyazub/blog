@@ -8,6 +8,9 @@ yarn-error.log*
 # Dependency directories
 node_modules/
 
+# Yarn cache
+.yarn/cache/
+
 # next.js build output
 .next
 .env

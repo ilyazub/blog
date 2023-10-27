@@ -41,7 +41,7 @@ export async function getStaticProps({ preview = false }) {
 
   const title =
     `${globalSeo?.siteName}${globalSeo?.titleSuffix}` ||
-    "Ilya Zub &mdash; Software Engineer";
+    "Illia Zub on Programming, Education, Wellbeing, and having fun";
 
   return {
     props: { allPosts, title },
