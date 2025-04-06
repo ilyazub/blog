@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Header() {
   return (
     <motion.header
-      className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-lg border-b border-white/10"
+      className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ type: 'spring', stiffness: 120, damping: 20 }}
@@ -14,7 +14,7 @@ export default function Header() {
           Illia Zub
         </Link>
         <div className="flex gap-6">
-          <Link href="/blog" className="text-gray-300 hover:text-cyan-400 transition-colors">
+          <Link href="/blog" className="text-gray-300 hover:text-cyan-400 transition-colors duration-200">
             Blog
           </Link>
         </div>

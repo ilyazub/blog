@@ -1,4 +1,4 @@
-import { Image } from "react-datocms";
+import Image from "next/image";
 import cn from "classnames";
 import Link from "next/link";
 

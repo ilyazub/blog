@@ -5,7 +5,7 @@ import Header from "./header";
 
 export default function Layout({ preview, children }) {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-black to-gray-900">
+    <div className="min-h-screen bg-gradient-to-b from-black via-gray-900 to-black">
       <Meta />
       <Alert preview={preview} />
       <Header />
