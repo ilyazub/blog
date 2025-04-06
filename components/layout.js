@@ -2,7 +2,7 @@ import Alert from "./alert";
 import Footer from "./footer";
 import Meta from "./meta";
 import { Canvas } from '@react-three/fiber'
-import { OrbitControls } from '@react-three/drei'
+import { OrbitControls } from '@react-three/drei/core/OrbitControls'
 
 export default function Layout({ preview, children }) {
   return (
