@@ -3,33 +3,20 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <motion.header 
-      className="fixed top-0 w-full z-50 bg-black/50 backdrop-blur-md"
+    <motion.header
+      className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-lg border-b border-white/10"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      transition={{ type: 'spring', stiffness: 100 }}
+      transition={{ type: 'spring', stiffness: 120, damping: 20 }}
     >
-      <nav className="flex justify-between items-center p-6">
-        <motion.div whileHover={{ scale: 1.1 }}>
-          <Link href="/" className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-pink-400 bg-clip-text text-transparent">
-            Illia Zub
-          </Link>
-        </motion.div>
-        <div className="space-x-8">
-          <motion.a 
-            whileHover={{ scale: 1.1 }}
-            href="/blog" 
-            className="text-white hover:text-cyan-400 transition-colors"
-          >
+      <nav className="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+        <Link href="/" className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-pink-400 bg-clip-text text-transparent">
+          Illia Zub
+        </Link>
+        <div className="flex gap-6">
+          <Link href="/blog" className="text-gray-300 hover:text-cyan-400 transition-colors">
             Blog
-          </motion.a>
-          <motion.a
-            whileHover={{ scale: 1.1 }}
-            href="/services"
-            className="text-white hover:text-pink-400 transition-colors"
-          >
-            Services
-          </motion.a>
+          </Link>
         </div>
       </nav>
     </motion.header>
